@@ -20,7 +20,6 @@ class CodeChallenge:
 		"""
 		To return total sum of the list
 		"""
-
 		result = 0
 		if items:
 			result = reduce(lambda x, y: x+y, items)
@@ -29,9 +28,7 @@ class CodeChallenge:
 	def get_partitioned_list(self):
 		"""
 		Return two lists of equal sum
-		"""
-
-		
+		"""		
 		for i in sorted(self.num_list, reverse=True):
 			if self.get_sum(items=self.a) < self.get_sum(items=self.b):
 				self.a.append(i)
@@ -50,7 +47,6 @@ class CodeChallenge:
 		"""
 		To check given list is partitioned or not.
 		"""
-
 		if self.get_sum(items=self.num_list) % 2 == 0:			
 			self.get_partitioned_list()
 		else:
