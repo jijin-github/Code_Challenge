@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 
 # title           : code_challenge.py
-# description     : This will create a header for a python script.
+# description     : The given list can be partitioned into two sublists
 # author          : jijin sebastian
 # date            : 20181119
 # python_version  : 2.7.15
@@ -14,7 +14,7 @@ class CodeChallenge:
 		self.num_list = num_list
 		self.a = []
 		self.b = []
-		
+
 	@staticmethod
 	def get_sum(items=[]):
 		"""
